@@ -10,37 +10,11 @@ function rating() {
             lis[i].classList.remove('active');
         }
     }
-    if (this.innerHTML == 1) {
-        for (i = 0; i < 1; i++) {
-            lis[i].classList.add("active");
-        }
-        rate = 1;
-        number.innerHTML = rate;
-    } else if (this.innerHTML == 2) {
-        for (i = 0; i < 2; i++) {
-            lis[i].classList.add("active");
-        }
-        rate = 2;
-        number.innerHTML = rate;
-    } else if (this.innerHTML == 3) {
-        for (i = 0; i < 3; i++) {
-            lis[i].classList.add("active");
-        }
-        rate = 3;
-        number.innerHTML = rate;
-    } else if (this.innerHTML == 4) {
-        for (i = 0; i < 4; i++) {
-            lis[i].classList.add("active");
-        }
-        rate = 4;
-        number.innerHTML = rate;
-    } else if (this.innerHTML == 5) {
-        for (i = 0; i < 5; i++) {
-            lis[i].classList.add("active");
-        }
-        rate = 5;
-        number.innerHTML = rate;
+    for (i = 0; i < parseInt(this.innerHTML); i++) {
+        lis[i].classList.add("active")
     }
+    rate = parseInt(this.innerHTML);
+    number.innerHTML = rate
 }
 lis.map(function (e) {
     e.addEventListener("click", rating)
