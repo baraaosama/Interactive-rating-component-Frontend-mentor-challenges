@@ -11,23 +11,33 @@ function rating() {
         }
     }
     if (this.innerHTML == 1) {
-        this.classList.add("active");
+        for (i = 0; i < 1; i++) {
+            lis[i].classList.add("active");
+        }
         rate = 1;
         number.innerHTML = rate;
     } else if (this.innerHTML == 2) {
-        this.classList.add("active");
+        for (i = 0; i < 2; i++) {
+            lis[i].classList.add("active");
+        }
         rate = 2;
         number.innerHTML = rate;
     } else if (this.innerHTML == 3) {
-        this.classList.add("active");
+        for (i = 0; i < 3; i++) {
+            lis[i].classList.add("active");
+        }
         rate = 3;
         number.innerHTML = rate;
     } else if (this.innerHTML == 4) {
-        this.classList.add("active");
+        for (i = 0; i < 4; i++) {
+            lis[i].classList.add("active");
+        }
         rate = 4;
         number.innerHTML = rate;
     } else if (this.innerHTML == 5) {
-        this.classList.add("active");
+        for (i = 0; i < 5; i++) {
+            lis[i].classList.add("active");
+        }
         rate = 5;
         number.innerHTML = rate;
     }
